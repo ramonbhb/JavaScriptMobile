@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Escrita</title>
+  <script src='script.js'></script>
+</head>
+<body>
+	<div class="columns">
+  <div class="column">
+    <button class="btn-file">
+      Escolha arquivos para leitura<br>(File API) <input type="file" onchange="readFiles(this.files)" multiple>
+    </button>
+    
+    <p> Número de arquivos selecionados <b id="count">N/A</b></p>
+    <ul id="target"></ul>
+  </div>
+  <div class="column">
+    <button class="btn-file" onclick="writeFile()">
+      Escolha arquivos para criar ou escrever<br>(Native File System API)
+    </button>
+  </div>
+</div>
+</body>
+</html>
